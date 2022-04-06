@@ -47,7 +47,8 @@ then
     # export clash config 
     alias clashcfg="sh /Users/cyanwoods/Scripts/clash_ruleset.sh"
 
-    alias pro="export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153"
+    #use
+    alias pro="export https_proxy=http://127.0.0.1:6152 export http_proxy=http://127.0.0.1:6152 export all_proxy=socks5://127.0.0.1:6153"
 
     # default java version
     alias djava8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
