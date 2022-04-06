@@ -78,15 +78,15 @@ if [[ `uname` == 'Darwin' ]];
 then
     echo "Loading envconfig for macOS!!"
     source ~/.config/zsh/env_macos.zsh
-    source ~/.config/zsh/alias_macos.zsh
     echo "Done!!"
 elif [[ `uname` == 'Linux' ]];
 then
     echo "Loading envconfig for Linux!!"
     source ~/.config/zsh/env_linux.zsh
-    source ~/.config/zsh/alias_linux.zsh
     echo "Done!!"
 fi
+
+source ~/.config/zsh/alias.zsh
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
