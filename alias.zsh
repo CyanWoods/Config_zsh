@@ -51,8 +51,6 @@ then
     
 elif [[ `uname` == 'Linux' ]];
 then
-    source ~/.config/zsh/env_linux.zsh
-    source ~/.config/zsh/alias_linux.zsh
     ## some shrotcuts
     alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
     alias pro="export http_proxy=http://127.0.0.1:7892 export https_proxy=http://127.0.0.1:7892 export ALL_PROXY=socks5://127.0.0.1:7891"
