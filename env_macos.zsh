@@ -50,7 +50,7 @@ unset __conda_setup
 # export CPPFLAGS="-I/usr/local/opt/openjdk@8/include"
 
 ## If JAVA Path has been exported before, this export will not make effect
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
 
 
 

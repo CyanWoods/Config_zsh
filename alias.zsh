@@ -49,15 +49,24 @@ then
 
     alias pro="export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153"
 
+    # default java version
+    alias djava8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
+    alias djava11="export JAVA_HOME=$(/usr/libexec/java_home -v 11)"
+    alias djava17="export JAVA_HOME=$(/usr/libexec/java_home -v 17)"
+    alias djava18="export JAVA_HOME=$(/usr/libexec/java_home -v 18)"
+
+
     
 elif [[ `uname` == 'Linux' ]];
 then
     ## some shrotcuts
     alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
     alias pro="export http_proxy=http://127.0.0.1:7892 export https_proxy=http://127.0.0.1:7892 export ALL_PROXY=socks5://127.0.0.1:7891"
-    alias eap="sudo screen -R minieap minieap -u 202022172013130 -p 02080017 -n enp59s0 --fake-dns2 202.196.64.1  --module printer --module rjv3 -e 20 --module printer --if-impl sockraw --service default"
-    alias Nmgr="sudo systemctl start NetworkManager"
-    alias qqq="Nmgr&&insp"
+
+    # default java version
+    alias djava8="archlinux-java set java-8-openjdk"
+    alias djava11="archlinux-java set java-11-openjdk"
+    alias djava17="archlinux-java set java-17-openjdk"
 fi
 
 
