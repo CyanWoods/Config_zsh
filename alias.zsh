@@ -24,7 +24,6 @@ then
     alias steam="/Applications/Steam.app/Contents/MacOS/steam_osx -dev"
     alias gcc="gcc-11"
 
-
     ## Brew related
     alias bu="brew update"
     alias buug="brew upgrade --greedy --force"
@@ -45,8 +44,10 @@ then
     alias vm71="ssh root@192.168.247.166"
     alias vm72="ssh root@192.168.247.167"
 
-    # clash config 
+    # export clash config 
     alias clashcfg="sh /Users/cyanwoods/Scripts/clash_ruleset.sh"
+
+    alias pro="export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153"
 
     
 elif [[ `uname` == 'Linux' ]];
