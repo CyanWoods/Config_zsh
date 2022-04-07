@@ -10,8 +10,19 @@ fi
 
 # Set name of the theme to load
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
+if [[ `uname` == 'Darwin' ]]; 
+then
+  ZSH_THEME="powerlevel10k/powerlevel10k"
+elif [[ `uname` == 'Linux' ]];
+then
+    if [[ 'cat /proc/version |grep arch |wc -l' ]];
+    then
+      ZSH_THEME="powerlevel10k/powerlevel10k"
+    elif [[ 'cat /proc/version |grep ubuntu |wc -l' ]];
+    then
+      ZSH_THEME="ys"
+    fi
+fi
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
