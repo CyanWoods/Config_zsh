@@ -15,10 +15,10 @@ then
   ZSH_THEME="powerlevel10k/powerlevel10k"
 elif [[ `uname` == 'Linux' ]];
 then
-    if [[ 'cat /proc/version |grep arch |wc -l' ]];
+    if [[ 'cat /proc/version |grep arch |wc -l' == '1' ]];
     then
       ZSH_THEME="powerlevel10k/powerlevel10k"
-    elif [[ 'cat /proc/version |grep ubuntu |wc -l' ]];
+    elif [[ 'cat /proc/version |grep ubuntu |wc -l' == '1' ]];
     then
       ZSH_THEME="ys"
     fi
