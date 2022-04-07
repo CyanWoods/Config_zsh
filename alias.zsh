@@ -60,15 +60,23 @@ then
     
 elif [[ `uname` == 'Linux' ]];
 then
-    ## some shrotcuts
-    alias edzshenv="vim ~/.config/zsh/env_linux.zsh"
-    alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
-    alias pro="export http_proxy=http://127.0.0.1:7892 export https_proxy=http://127.0.0.1:7892 export ALL_PROXY=socks5://127.0.0.1:7891"
+    if [[ cat /proc/version |grep arch |wc -l ]];
+    then
+        ## some shrotcuts
+        alias edzshenv="vim ~/.config/zsh/env_linux.zsh"
+        alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
+        alias pro="export http_proxy=http://127.0.0.1:7892 export https_proxy=http://127.0.0.1:7892 export ALL_PROXY=socks5://127.0.0.1:7891"
 
-    # default java version
-    alias djava8="sudo archlinux-java set java-8-openjdk"
-    alias djava11="sudo archlinux-java set java-11-openjdk"
-    alias djava17="sudo archlinux-java set java-17-openjdk"
+        # default java version
+        alias djava8="sudo archlinux-java set java-8-openjdk"
+        alias djava11="sudo archlinux-java set java-11-openjdk"
+        alias djava17="sudo archlinux-java set java-17-openjdk"
+
+    elif [[ cat /proc/version |grep ubuntu |wc -l ]];
+    then 
+        alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+        alias mc="/etc/init.d/minecraft"
+    fi    
 fi
 
 
