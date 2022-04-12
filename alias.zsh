@@ -72,7 +72,7 @@ then
         alias djava8="sudo archlinux-java set java-8-openjdk"
         alias djava11="sudo archlinux-java set java-11-openjdk"
         alias djava17="sudo archlinux-java set java-17-openjdk"
-
+    fi
     elif [[ 'cat /proc/version |grep ubuntu |wc -l' ]];
     then 
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
