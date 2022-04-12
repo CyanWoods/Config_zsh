@@ -61,7 +61,7 @@ then
 elif [[ `uname` == 'Linux' ]];
 then
     echo hello Linux
-    if [[ 'cat /proc/version |grep arch |wc -l' == 1 ]];
+    if [[ `cat /proc/version |grep arch |wc -l` == 1 ]];
     then
         ## some shrotcuts
         alias edzshenv="vim ~/.config/zsh/env_linux.zsh"
@@ -74,7 +74,7 @@ then
         alias djava11="sudo archlinux-java set java-11-openjdk"
         alias djava17="sudo archlinux-java set java-17-openjdk"
     
-    elif [[ 'cat /proc/version |grep ubuntu |wc -l' == 1 ]];
+    elif [[ `cat /proc/version |grep ubuntu |wc -l` == 1 ]];
     then 
         echo hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
