@@ -60,6 +60,7 @@ then
     
 elif [[ `uname` == 'Linux' ]];
 then
+    echo hello Linux
     if [[ 'cat /proc/version |grep arch |wc -l' == 1 ]];
     then
         ## some shrotcuts
@@ -75,6 +76,7 @@ then
     
     elif [[ 'cat /proc/version |grep ubuntu |wc -l' == 1 ]];
     then 
+        echo hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
     fi    
