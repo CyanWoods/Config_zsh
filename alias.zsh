@@ -79,8 +79,6 @@ then
         echo hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
-    else
     fi  
-else
 fi
 
