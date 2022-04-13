@@ -7,7 +7,7 @@ export PATH="/Users/cyanwoods/.local/bin:$PATH"
 export PATH="/usr/local/Cellar/llvm/13.0.0_2/bin:$PATH"
 export PATH="/usr/local/lib/ruby/gems/3.1.0/bin:$PATH"
 
-
+export UPDATE_ZSH_DAYS=7
 #################################
 # this is the config of conda-init
 #################################
