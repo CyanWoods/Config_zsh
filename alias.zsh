@@ -15,7 +15,8 @@ alias Gauto="git add . && git commit -m "." && git push"
 alias Gb="cd ~/Github/A_Blog && gpr"
 alias Gp="cd ~/Github/A_Projects && gpr"
 alias Gn="cd ~/Github/A_Note && gpr"
-
+alias Gzsh="cd ~/.config/zsh && gpr"
+alias Gvim="cd ~/.config/nvim && gpr"
 
 if [[ `uname` == 'Darwin' ]]; 
 then
@@ -39,10 +40,9 @@ then
     alias ctag="/usr/bin/ctags"
 
     # vm
-    alias vm81="ssh root@192.168.247.164"
-    alias vm82="ssh root@192.168.247.165"
-    alias vm71="ssh root@192.168.247.166"
-    alias vm72="ssh root@192.168.247.167"
+    alias vm76="ssh root@192.168.247.76"
+    alias vm83="ssh root@192.168.247.83"
+    alias vm85="ssh root@192.168.247.85"
 
     # export clash config 
     alias clashcfg="sh /Users/cyanwoods/Scripts/clash_ruleset.sh"
