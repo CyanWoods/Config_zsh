@@ -79,7 +79,7 @@ then
         echo Hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
-    elif [[ `cat /proc/version |grep Red Hat |wc -l` == 1 ]];
+    elif [[ `cat /proc/version |grep 'Red Hat' |wc -l` == 1 ]];
     then
         echo Hello RHEL
     fi  
