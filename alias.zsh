@@ -57,10 +57,9 @@ then
     alias djava18="export JAVA_HOME=$(/usr/libexec/java_home -v 18)"
 
 
-    
 elif [[ `uname` == 'Linux' ]];
 then
-    if [[ `cat /proc/version |grep archlinux |wc -l` == 1 ]];
+    if [[ `lsb_release -a |grep 'Arch Linux' |wc -l` == 1 ]];
     then
         echo Hello Arch Linux
         ## some shrotcuts
@@ -74,17 +73,25 @@ then
         alias djava11="sudo archlinux-java set java-11-openjdk"
         alias djava17="sudo archlinux-java set java-17-openjdk"
     
-    elif [[ `cat /proc/version |grep ubuntu |wc -l` == 1 ]];
+    
+    elif [[ `lsb_release -a |grep Ubuntu |wc -l` == 1 ]];
     then 
         echo Hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
+    
+
     elif [[ `cat /proc/version |grep 'Red Hat' |wc -l` == 1 ]];
     then
         echo Hello RHEL
-    elif [[ `cat /proc/version |grep 'Red Hat'|grep aarch64 |wc -l` == 1 ]];
+
+
+    elif [[ `lsb_release -a |grep 'Debian'|grep aarch64 |wc -l` == 1 ]];
     then
         echo Hello Raspberry
+    
+
+
     fi  
 fi
 
