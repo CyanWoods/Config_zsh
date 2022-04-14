@@ -60,7 +60,7 @@ then
     
 elif [[ `uname` == 'Linux' ]];
 then
-    if [[ `cat /proc/version |grep arch |wc -l` == 1 ]];
+    if [[ `cat /proc/version |grep archlinux |wc -l` == 1 ]];
     then
         echo Hello Arch Linux
         ## some shrotcuts
@@ -82,6 +82,9 @@ then
     elif [[ `cat /proc/version |grep 'Red Hat' |wc -l` == 1 ]];
     then
         echo Hello RHEL
+    elif [[ `cat /proc/version |grep 'Red Hat'|grep aarch64 |wc -l` == 1 ]];
+    then
+        echo Hello Raspberry
     fi  
 fi
 
