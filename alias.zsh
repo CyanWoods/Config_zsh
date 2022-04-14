@@ -59,7 +59,7 @@ then
 
 elif [[ `uname` == 'Linux' ]];
 then
-    if [[ `neofetch |grep 'Arch Linux' |wc -l` ]];
+    if [[ `neofetch |grep 'Arch Linux' |wc -l` == 1 ]];
     then
         echo Hello Arch Linux
         ## some shrotcuts
@@ -74,19 +74,24 @@ then
         alias djava17="sudo archlinux-java set java-17-openjdk"
     
     
-    elif [[ `neofetch |grep Ubuntu |wc -l` ]];
+    elif [[ `neofetch |grep Ubuntu |wc -l` == 1 ]];
     then 
         echo Hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
     
 
-    elif [[ `neofetch |grep 'CentOS' |wc -l` || `neofetch |grep 'Rocky Linux' |wc -l` ]];
+    elif [[ `neofetch |grep 'CentOS' |wc -l` == 1 ]];
     then
-        echo Hello RHEL
+        echo Hello CentOS
 
 
-    elif [[ `neofetch |grep 'Debian'|wc -l` ]];
+    elif [[ `neofetch |grep 'Rocky Linux' |wc -l` == 1 ]];
+    then
+        echo Hello Rocky Linux
+
+
+    elif [[ `neofetch |grep 'Debian'|wc -l` == 1 ]];
     then
         echo Hello Raspberry
     
