@@ -95,7 +95,8 @@ then
     elif [[ `neofetch |grep 'Debian'|wc -l` != 0 ]];
     then
         echo Hello Raspberry
-    
+        alias smbstart="sudo mount /dev/sda2 ./raspi_smb/ && sudo systemctl start smbd"
+        alias smbstop="sudo systemctl stop smbd && sudo umount ./raspi_smb"
 
 
     fi  
