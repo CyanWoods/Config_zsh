@@ -86,7 +86,7 @@ then
         echo Hello RHEL
 
 
-    elif [[ `neofetch |grep 'Debian'|wc -l` && == 1 ]];
+    elif [[ `neofetch |grep 'Debian'|wc -l` == 1 ]];
     then
         echo Hello Raspberry
     
