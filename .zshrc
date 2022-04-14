@@ -19,19 +19,59 @@ plugins=( brew
         )
 
 export ZSH=$HOME/.oh-my-zsh
+
+source $HOME/.config/zsh/alias/alias_common.zsh
+
 if [[ `uname` == 'Darwin' ]]; 
 then
-    echo "Loading envconfig for macOS!!"
-    source ~/.config/zsh/env_macos.zsh
-    echo "Done!!"
+    echo Hello macOS
+    source $HOME/.config/zsh/env/env_macos.zsh
+    source $HOME/.config/zsh/alias/alias_macos.zsh
+    echo Finish
+
+
+
+
 elif [[ `uname` == 'Linux' ]];
 then
-    echo "Loading envconfig for Linux!!"
-    source ~/.config/zsh/env_linux.zsh
-    echo "Done!!"
+
+  if [[ `neofetch |grep 'Arch Linux' |wc -l` != 0 ]];
+  then
+    echo Hello Arch Linux
+    source $HOME/.config/zsh/env/env_archlinux.zsh
+    source $HOME/.config/zsh/alias/alias_archlinux.zsh
+    echo Finish
+
+  elif [[ `neofetch |grep Ubuntu |wc -l` != 0 ]];
+  then
+    echo Hello Ubuntu
+    source $HOME/.config/zsh/alias/alias_ubuntu.zsh
+    echo Finish
+
+  elif [[ `neofetch |grep 'CentOS' |wc -l` != 0 ]];
+  then
+    echo Hello CentOS
+    source $HOME/.config/zsh/alias/alias_centos.zsh
+    echo Finish
+
+
+  elif [[ `neofetch |grep 'Rocky Linux' |wc -l` != 0 ]];
+  then
+    echo Hello Rocky Linux
+    source $HOME/.config/zsh/alias/alias_rockylinux.zsh
+    echo Finish
+
+
+  elif [[ `neofetch |grep 'Debian'|wc -l` != 0 ]];
+  then
+    echo Hello Debian
+    source $HOME/.config/zsh/alias/alias_debian.zsh
+    echo Finish
+
+
+  fi
 fi
 
-source ~/.config/zsh/alias.zsh
 source $ZSH/oh-my-zsh.sh
 
  if [[ -n $SSH_CONNECTION ]]; then
