@@ -1,6 +1,7 @@
-## some shrotcuts
 alias edzshali="vim ~/.config/zsh/alias/alias_archlinux.zsh"
 alias edzshenv="vim ~/.config/zsh/env/env_archlinux.zsh"
+
+
 alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
 alias pro="export http_proxy=http://127.0.0.1:7892 export https_proxy=http://127.0.0.1:7892 export ALL_PROXY=socks5://127.0.0.1:7891"
 alias y="yay -Syyu"

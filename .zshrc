@@ -29,9 +29,6 @@ then
     source $HOME/.config/zsh/alias/alias_macos.zsh
     echo Finish
 
-
-
-
 elif [[ `uname` == 'Linux' ]];
 then
 
@@ -67,7 +64,6 @@ then
     echo Hello Debian
     source $HOME/.config/zsh/alias/alias_debian.zsh
     echo Finish
-
 
   fi
 fi

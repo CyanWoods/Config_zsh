@@ -1,5 +1,7 @@
 alias edzshali="vim ~/.config/zsh/alias/alias_macos.zsh"
 alias edzshenv="vim ~/.config/zsh/env/env_macos.zsh"
+
+
 ## alias of apps
 alias steam="/Applications/Steam.app/Contents/MacOS/steam_osx -dev"
 alias gcc="gcc-11"
