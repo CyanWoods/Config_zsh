@@ -40,9 +40,9 @@ then
     alias ctag="/usr/bin/ctags"
 
     # vm
-    alias vm76="ssh root@192.168.247.76"
-    alias vm83="ssh root@192.168.247.83"
-    alias vm85="ssh root@192.168.247.85"
+    alias vm76="ssh root@192.168.247.15"
+    alias vm83="ssh root@192.168.247.20"
+    alias vm85="ssh root@192.168.247.25"
 
     # export clash config 
     alias clashcfg="sh /Users/cyanwoods/Scripts/clash_ruleset.sh"
@@ -60,9 +60,9 @@ then
     
 elif [[ `uname` == 'Linux' ]];
 then
-    echo hello Linux
     if [[ `cat /proc/version |grep arch |wc -l` == 1 ]];
     then
+        echo Hello Arch Linux
         ## some shrotcuts
         alias edzshenv="vim ~/.config/zsh/env_linux.zsh"
         alias insp="/usr/bin/ssh  -T -f -N -g -R :25565:127.0.0.1:22 cyanwoods@cyanwoods.com" 
@@ -76,9 +76,12 @@ then
     
     elif [[ `cat /proc/version |grep ubuntu |wc -l` == 1 ]];
     then 
-        echo hello Ubuntu
+        echo Hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
+    elif [[ `cat /proc/version |grep Red Hat |wc -l` == 1 ]];
+    then
+        echo Hello RHEL
     fi  
 fi
 
