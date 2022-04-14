@@ -86,7 +86,7 @@ then
         echo Hello RHEL
 
 
-    elif [[ `lsb_release -a |grep 'Debian'|grep aarch64 |wc -l` == 1 ]];
+    elif [[ `lsb_release -a |grep 'Debian'|wc -l` == 1 ]];
     then
         echo Hello Raspberry
     
