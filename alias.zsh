@@ -9,6 +9,7 @@ alias post="hugo && Gauto"
 alias edzsh="vim ~/.zshrc"
 alias edzshali="vim ~/.config/zsh/alias.zsh"
 alias rezsh="source ~/.zshrc"
+alias reezsh="Gzsh && rezsh"
 
 ## Github Repo 
 alias Gauto="git add . && git commit -m "." && git push"
@@ -59,7 +60,7 @@ then
 
 elif [[ `uname` == 'Linux' ]];
 then
-    if [[ `neofetch |grep 'Arch Linux' |wc -l` == 1 ]];
+    if [[ `neofetch |grep 'Arch Linux' |wc -l` != 0 ]];
     then
         echo Hello Arch Linux
         ## some shrotcuts
@@ -74,24 +75,24 @@ then
         alias djava17="sudo archlinux-java set java-17-openjdk"
     
     
-    elif [[ `neofetch |grep Ubuntu |wc -l` == 1 ]];
+    elif [[ `neofetch |grep Ubuntu |wc -l` != 0 ]];
     then 
         echo Hello Ubuntu
         alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
         alias mc="/etc/init.d/minecraft"
     
 
-    elif [[ `neofetch |grep 'CentOS' |wc -l` == 1 ]];
+    elif [[ `neofetch |grep 'CentOS' |wc -l` != 0 ]];
     then
         echo Hello CentOS
 
 
-    elif [[ `neofetch |grep 'Rocky Linux' |wc -l` == 1 ]];
+    elif [[ `neofetch |grep 'Rocky Linux' |wc -l` != 0 ]];
     then
         echo Hello Rocky Linux
 
 
-    elif [[ `neofetch |grep 'Debian'|wc -l` == 1 ]];
+    elif [[ `neofetch |grep 'Debian'|wc -l` != 0 ]];
     then
         echo Hello Raspberry
     
