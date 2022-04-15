@@ -48,14 +48,14 @@ then
   elif [[ `neofetch |grep 'CentOS' |wc -l` != 0 ]];
   then
     echo Hello CentOS
-    source $HOME/.config/zsh/alias/alias_centos.zsh
+    source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
 
 
   elif [[ `neofetch |grep 'Rocky Linux' |wc -l` != 0 ]];
   then
     echo Hello Rocky Linux
-    source $HOME/.config/zsh/alias/alias_rockylinux.zsh
+    source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
 
 
