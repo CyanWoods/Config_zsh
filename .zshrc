@@ -15,6 +15,8 @@ plugins=( brew
           safe-paste
           colored-man-pages
           extract
+          zsh-autosuggestions
+          zsh-completions
           zsh-syntax-highlighting 
         )
 
