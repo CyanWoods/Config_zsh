@@ -21,7 +21,11 @@ if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-completions/zsh-autosuggestions" 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
-mv $HOME/.zshrc $HOME/.zshrc.bak
+if [  -f "$HOME/.zshrc" ]; then
+    mv $HOME/.zshrc $HOME/.zshrc.bak
+fi
+
+
 
 
 if [ ! -d "$HOME/.config/zsh" ]; then
