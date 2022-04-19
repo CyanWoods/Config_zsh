@@ -11,6 +11,7 @@ alias rezsh="source ~/.zshrc"
 alias reezsh="Gzsh && rezsh"
 
 ## Github Repo 
+alias gpr="git pull -r"
 alias Gauto="git add . && git commit -m "." && git push"
 alias Gb="cd ~/Github/A_Blog && gpr"
 alias Gp="cd ~/Github/A_Projects && gpr"
