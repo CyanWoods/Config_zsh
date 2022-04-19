@@ -23,8 +23,13 @@ fi
 
 mv $HOME/.zshrc $HOME/.zshrc.bak
 
-git clone https://github.com/CyanWoods/zshconfig.git $HOME/.config/zsh
 
-ln -s $HOME/.config/zsh/.zshrc $HOME/.zshrc 
+if [ ! -d "$HOME/.config/zsh" ]; then
+    git clone https://github.com/CyanWoods/zshconfig.git $HOME/.config/zsh
+elif [ -d "$HOME/.config/zsh" ]; then
+    cd $HOME/.config/zsh && git pull -r 
+fi
+
+ln -s $HOME/.config/zsh/zshrc $HOME/.zshrc 
 
 source $HOME/.zshrc
