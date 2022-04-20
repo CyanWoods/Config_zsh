@@ -4,7 +4,8 @@ alias nf="neofetch"
 alias ra="ranger"
 alias lg="lazygit"
 alias post="hugo && Gauto"
-ailas a="./a.out"
+alias a="./a.out"
+
 ## alias of zsh
 alias edzsh="vim ~/.zshrc"
 alias rezsh="source ~/.zshrc"
