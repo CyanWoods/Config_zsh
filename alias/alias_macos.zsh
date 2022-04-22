@@ -15,7 +15,7 @@ alias bl="brew list"
 
 ## some shrotcuts
 alias insp="ssh -p 25565 cyanwoods@cyanwoods.com"
-alias rasp="ssh -p 25564 pi@cyanwoods.com"
+alias rasp="ssh -p 25564 cyanwoods@cyanwoods.com"
 ## Yubikey
 alias ce="gpg --card-edit"
 alias ctag="/usr/bin/ctags"
