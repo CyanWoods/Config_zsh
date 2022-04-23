@@ -10,3 +10,6 @@ alias y="yay -Syyu"
 alias djava8="sudo archlinux-java set java-8-openjdk"
 alias djava11="sudo archlinux-java set java-11-openjdk"
 alias djava17="sudo archlinux-java set java-17-openjdk"
+
+
+alias rasp="ssh -p 25564 cyanwoods@cyanwoods.com"
