@@ -22,16 +22,17 @@ if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-completions/zsh-autosuggestions" 
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
 
-# replace exsist zshrc file
-if [  -f "$HOME/.zshrc" ]; then
-    mv $HOME/.zshrc $HOME/.zshrc.bak -y 
-fi
-
+# prepare zsh config
 if [ ! -d "$HOME/.config/zsh" ]; then
     git clone https://github.com/CyanWoods/zshconfig.git $HOME/.config/zsh
 elif [ -d "$HOME/.config/zsh" ]; then
     cd $HOME/.config/zsh && git pull -r 
     cd $HOME
+fi
+
+# replace exsist zshrc file
+if [  -f "$HOME/.zshrc" ]; then
+    mv -f $HOME/.zshrc $HOME/.zshrc.bak 
 fi
 
 ln -s $HOME/.config/zsh/zshrc $HOME/.zshrc 
