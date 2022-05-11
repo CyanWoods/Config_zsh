@@ -26,46 +26,34 @@ source $HOME/.config/zsh/alias/alias_common.zsh
 
 if [[ `uname` == 'Darwin' ]]; 
 then
-    echo Hello macOS
     source $HOME/.config/zsh/env/env_macos.zsh
     source $HOME/.config/zsh/alias/alias_macos.zsh
-    echo Finish
 
 elif [[ `uname` == 'Linux' ]];
 then
 
   if [[ `cat /etc/os-release |grep 'Arch Linux' |wc -l` != 0 ]];
   then
-    echo Hello Arch Linux
     source $HOME/.config/zsh/env/env_archlinux.zsh
     source $HOME/.config/zsh/alias/alias_archlinux.zsh
-    echo Finish
 
   elif [[ `cat /etc/os-release |grep Ubuntu |wc -l` != 0 ]];
   then
-    echo Hello Ubuntu
     source $HOME/.config/zsh/alias/alias_ubuntu.zsh
-    echo Finish
 
   elif [[ `cat /etc/os-release |grep 'CentOS' |wc -l` != 0 ]];
   then
-    echo Hello CentOS
     source $HOME/.config/zsh/alias/alias_rhel.zsh
-    echo Finish
 
 
   elif [[ `cat /etc/os-release |grep 'Rocky Linux' |wc -l` != 0 ]];
   then
-    echo Hello Rocky Linux
     source $HOME/.config/zsh/alias/alias_rhel.zsh
-    echo Finish
 
 
   elif [[ `cat /etc/os-release |grep 'Debian'|wc -l` != 0 ]];
   then
-    echo Hello Debian
     source $HOME/.config/zsh/alias/alias_debian.zsh
-    echo Finish
 
   fi
 fi
