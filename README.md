@@ -2,11 +2,10 @@
 
 自用的Zsh配置文件
 
-主要包含了各个平台上使用的不同alias、环境变量配置以及部署Zsh的脚本
+主要包含了各个平台上使用的不同alias、环境变量配置。
 
 ``` shell
 ├── README.md
-├── Zsh_Deploy.sh
 ├── alias
 │   ├── alias_archlinux.zsh
 │   ├── alias_common.zsh

@@ -37,9 +37,11 @@ then
     source $HOME/.config/zsh/env/env_archlinux.zsh
     source $HOME/.config/zsh/alias/alias_archlinux.zsh
 
+
   elif [[ `cat /etc/os-release |grep Ubuntu |wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/alias/alias_ubuntu.zsh
+
 
   elif [[ `cat /etc/os-release |grep 'CentOS' |wc -l` != 0 ]];
   then
@@ -61,9 +63,9 @@ fi
 source $ZSH/oh-my-zsh.sh
 
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
  else
-   export EDITOR='vim'
+   export EDITOR='nvim'
  fi
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
