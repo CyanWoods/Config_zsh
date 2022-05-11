@@ -34,34 +34,34 @@ then
 elif [[ `uname` == 'Linux' ]];
 then
 
-  if [[ `neofetch |grep 'Arch Linux' |wc -l` != 0 ]];
+  if [[ `cat /etc/os-release |grep 'Arch Linux' |wc -l` != 0 ]];
   then
     echo Hello Arch Linux
     source $HOME/.config/zsh/env/env_archlinux.zsh
     source $HOME/.config/zsh/alias/alias_archlinux.zsh
     echo Finish
 
-  elif [[ `neofetch |grep Ubuntu |wc -l` != 0 ]];
+  elif [[ `cat /etc/os-release |grep Ubuntu |wc -l` != 0 ]];
   then
     echo Hello Ubuntu
     source $HOME/.config/zsh/alias/alias_ubuntu.zsh
     echo Finish
 
-  elif [[ `neofetch |grep 'CentOS' |wc -l` != 0 ]];
+  elif [[ `cat /etc/os-release |grep 'CentOS' |wc -l` != 0 ]];
   then
     echo Hello CentOS
     source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
 
 
-  elif [[ `neofetch |grep 'Rocky Linux' |wc -l` != 0 ]];
+  elif [[ `cat /etc/os-release |grep 'Rocky Linux' |wc -l` != 0 ]];
   then
     echo Hello Rocky Linux
     source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
 
 
-  elif [[ `neofetch |grep 'Debian'|wc -l` != 0 ]];
+  elif [[ `cat /etc/os-release |grep 'Debian'|wc -l` != 0 ]];
   then
     echo Hello Debian
     source $HOME/.config/zsh/alias/alias_debian.zsh
