@@ -32,28 +32,28 @@ then
 elif [[ `uname` == 'Linux' ]];
 then
 
-  if [[ `cat /etc/os-release |grep 'Arch Linux' |wc -l` != 0 ]];
+  if [[ `grep 'Arch Linux' /etc/os-release | wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/env/env_archlinux.zsh
     source $HOME/.config/zsh/alias/alias_archlinux.zsh
 
 
-  elif [[ `cat /etc/os-release |grep Ubuntu |wc -l` != 0 ]];
+  elif [[ `grep 'Ubuntu' /etc/os-release | wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/alias/alias_ubuntu.zsh
 
 
-  elif [[ `cat /etc/os-release |grep 'CentOS' |wc -l` != 0 ]];
+  elif [[ `grep 'CentOS' /etc/os-release | wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/alias/alias_rhel.zsh
 
 
-  elif [[ `cat /etc/os-release |grep 'Rocky Linux' |wc -l` != 0 ]];
+  elif [[ `grep 'Rocky Linux' /etc/os-release | wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/alias/alias_rhel.zsh
 
 
-  elif [[ `cat /etc/os-release |grep 'Debian'|wc -l` != 0 ]];
+  elif [[ `grep 'Debian' /etc/os-release | wc -l` != 0 ]];
   then
     source $HOME/.config/zsh/alias/alias_debian.zsh
 
