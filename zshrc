@@ -30,6 +30,7 @@ then
     source $HOME/.config/zsh/env/env_macos.zsh
     source $HOME/.config/zsh/alias/alias_macos.zsh
     echo Finish
+    break
 
 elif [[ `uname` == 'Linux' ]];
 then
@@ -40,18 +41,21 @@ then
     source $HOME/.config/zsh/env/env_archlinux.zsh
     source $HOME/.config/zsh/alias/alias_archlinux.zsh
     echo Finish
+    break
 
   elif [[ `cat /etc/os-release |grep Ubuntu |wc -l` != 0 ]];
   then
     echo Hello Ubuntu
     source $HOME/.config/zsh/alias/alias_ubuntu.zsh
     echo Finish
+    break
 
   elif [[ `cat /etc/os-release |grep 'CentOS' |wc -l` != 0 ]];
   then
     echo Hello CentOS
     source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
+    break
 
 
   elif [[ `cat /etc/os-release |grep 'Rocky Linux' |wc -l` != 0 ]];
@@ -59,6 +63,7 @@ then
     echo Hello Rocky Linux
     source $HOME/.config/zsh/alias/alias_rhel.zsh
     echo Finish
+    break
 
 
   elif [[ `cat /etc/os-release |grep 'Debian'|wc -l` != 0 ]];
@@ -66,6 +71,7 @@ then
     echo Hello Debian
     source $HOME/.config/zsh/alias/alias_debian.zsh
     echo Finish
+    break
 
   fi
 fi
