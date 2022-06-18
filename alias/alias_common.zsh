@@ -2,7 +2,6 @@
 alias c="clear"
 alias nf="neofetch"
 alias ra="ranger"
-alias lg="lazygit"
 alias post="hugo && Gauto"
 alias a="./a.out"
 
