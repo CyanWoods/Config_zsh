@@ -28,6 +28,7 @@ if [[ `uname` == 'Darwin' ]];
 then
     source $HOME/.config/zsh/env/env_macos.zsh
     source $HOME/.config/zsh/alias/alias_macos.zsh
+    . "/Users/cyanwoods/.acme.sh/acme.sh.env"
 
 elif [[ `uname` == 'Linux' ]];
 then
