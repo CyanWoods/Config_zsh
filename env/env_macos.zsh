@@ -29,7 +29,7 @@ unset __conda_setup
 #################################
 # LazyGit
 #################################
-lazygit()
+lg()
 {
     export LAZYGIT_NEW_DIR_FILE=~/.lazygit/newdir
 
