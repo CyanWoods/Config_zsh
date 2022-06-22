@@ -14,19 +14,17 @@ alias bo="brew outdated"
 alias bl="brew list"
 
 ## some shrotcuts
-alias insp="ssh -p 25565 cyanwoods@cyanwoods.com"
-alias rasp="ssh -p 25564 cyanwoods@cyanwoods.com"
+alias legi="ssh -p 25565 cyanwoods@cyanwoods.com"
+
 ## Yubikey
 alias ce="gpg --card-edit"
 alias ctag="/usr/bin/ctags"
 
 # vm
-alias vm76="ssh root@192.168.247.15"
-alias vm83="ssh root@192.168.247.20"
-alias vm85="ssh root@192.168.247.25"
+#alias vm76="ssh root@192.168.247.15"
 
 # export clash config 
-alias clashcfg="sh /Users/cyanwoods/Scripts/clash_ruleset.sh"
+alias clashcfg="sh /Users/cyanwoods/Nextcloud/Misc/Scripts/clash_ruleset.sh"
 
 #use
 alias pro="export https_proxy=http://127.0.0.1:6152 export http_proxy=http://127.0.0.1:6152 export all_proxy=socks5://127.0.0.1:6153"
