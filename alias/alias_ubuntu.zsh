@@ -6,3 +6,4 @@ alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 
 alias mc="/etc/init.d/minecraft"
 alias minecraft="/etc/init.d/minecraft"
+alias pro="export https_proxy=http/https为127.0.0.1:38457"
