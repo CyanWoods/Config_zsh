@@ -2,7 +2,6 @@
 alias c="clear"
 alias nf="neofetch"
 alias ra="ranger"
-alias post="hugo && Gauto"
 alias a="./a.out"
 
 ## alias of zsh

@@ -15,6 +15,7 @@ alias bl="brew list"
 
 ## some shrotcuts
 alias legi="ssh -p 25565 cyanwoods@cyanwoods.com"
+alias post="hugo && Gauto"
 
 ## Yubikey
 alias ce="gpg --card-edit"
